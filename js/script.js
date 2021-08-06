@@ -10,6 +10,12 @@ list.addEventListener('click', function(ev) {
 
 buttonAdd.addEventListener('click', addActivity)
 
+document.addEventListener('keypress', function(e){ //pegando a tecla enter
+    if(e.which == 13){
+        addActivity()
+    }
+}, false)
+
 close.addEventListener('click', deleteItem)
 
 function addActivity() {

@@ -60,7 +60,6 @@ body {
     width: 35vw;
 }
 
-
 span img{
   width: 25px;  
 }
@@ -71,8 +70,6 @@ span:hover {
 
 .checked {
     text-decoration: line-through;
-    /*background: rgb(247,178,103);
-    background: linear-gradient(90deg, rgba(247,178,103,1) 0%, rgba(242,92,84,1) 100%);*/
     background: rgb(237,242,251);
     background: linear-gradient(346deg, rgba(237,242,251,1) 0%, rgba(171,196,255,1) 100%);
 }
