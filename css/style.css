@@ -21,21 +21,28 @@ body {
 
 
 #myInput {
-    border: none;
+    border: 2px solid;
     width: 35vh;    
     padding: 10px;
     border-radius: 5px;
+}
+
+
+#btn {
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #caffbf;
+    box-shadow: black 5px 5px;
 }
 
 #btn:hover {
     background-color: #fffffc;
 }
 
-#btn {
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #caffbf;
+#btn:active {
+    box-shadow: black 0 5px;
+    transform: translateY(4px) translateX(4px);
 }
 
 #list {

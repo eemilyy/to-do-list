@@ -1,5 +1,12 @@
 const buttonAdd = document.getElementById('btn')
 
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
 buttonAdd.addEventListener('click', addActivity)
 
 function addActivity() {
@@ -32,4 +39,3 @@ function addActivity() {
         }
     }
 }
-
