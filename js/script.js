@@ -1,4 +1,5 @@
 const buttonAdd = document.getElementById('btn')
+const close = document.getElementsByClassName('close');
 
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
@@ -8,6 +9,8 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 buttonAdd.addEventListener('click', addActivity)
+
+close.addEventListener('click', deleteItem)
 
 function addActivity() {
     //console.log('Entrou')
@@ -24,6 +27,7 @@ function addActivity() {
         document.getElementById('list').appendChild(li);
     }
     document.getElementById("myInput").value = '';
+    document.getElementById("myInput").focus()
 
     var span = document.createElement("SPAN");
     var icon = document.createElement('IMG');
@@ -37,5 +41,15 @@ function addActivity() {
         var div = this.parentElement;
         div.style.display = "none";
         }
+    }
+}
+
+function deleteItem(){
+    var i;
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
     }
 }
