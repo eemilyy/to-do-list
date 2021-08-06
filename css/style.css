@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 *{
     font-family: 'Kanit', sans-serif;
+    font-size: large;
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(217,237,146);
+    background: linear-gradient(90deg, rgba(217,237,146,1) 0%, rgba(82,182,154,1) 100%);
 }
 
 .card{
     margin-top: 45px;
-    width: 50vw;
+    width: 40vw;
     padding: 35px;
     border: solid;
     border-radius: 5px;
     box-shadow: black 10px 10px;
     align-items: center;
+    background-color: white;
 }
 
 
@@ -26,7 +30,6 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
-
 
 #btn {
     border: 2px solid;
@@ -49,16 +52,29 @@ body {
     list-style: none;
 }
 
+#list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    width: 35vw;
+}
+
+
 span img{
-  width: 20px;  
+  width: 25px;  
 }
 
 span:hover {
-    background-color: darkseagreen;
+    background-color: #f25c54;
 }
 
 .checked {
     text-decoration: line-through;
+    /*background: rgb(247,178,103);
+    background: linear-gradient(90deg, rgba(247,178,103,1) 0%, rgba(242,92,84,1) 100%);*/
+    background: rgb(237,242,251);
+background: linear-gradient(346deg, rgba(237,242,251,1) 0%, rgba(171,196,255,1) 100%);
 }
 
 .hide {
