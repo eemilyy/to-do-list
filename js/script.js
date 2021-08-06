@@ -19,9 +19,10 @@ function addActivity() {
     document.getElementById("myInput").value = '';
 
     var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
+    var icon = document.createElement('IMG');
+    icon.src = 'icons/delete.png'
     span.className = "close";
-    span.appendChild(txt);
+    span.appendChild(icon);
     li.appendChild(span);
 
     for (i = 0; i < close.length; i++) {
