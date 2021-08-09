@@ -19,12 +19,10 @@ document.addEventListener('keypress', function(e){ //pegando a tecla enter
 close.addEventListener('click', deleteItem)
 
 function addActivity() {
-    //console.log('Entrou')
     var li = document.createElement('li')
     const input = document.getElementById('myInput').value
     var t = document.createTextNode(input);
     li.appendChild(t);
-    //console.log(li)
 
     if(input == ''){
         alert("Entrada não pode ser vazia");
